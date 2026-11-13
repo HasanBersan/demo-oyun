@@ -4,6 +4,8 @@
 
 **Demo**, 1–4 kişilik co-op bir *survivors* oyunu: karakterin otomatik saldırır, sen hareket edip düşman dalgalarından kaçarsın, seviye atladıkça silah ve güç toplarsın. Her 5 dakikada düşmanlar güçlenir ve bir mini boss gelir; 30. dakikada son boss seni bekler.
 
+Haritada **harita içi eventler** beliriyor: yanına gidersen bonus altın, Ruh Taşı ve özel ödüller kazanırsın. Her event başarısı kalıcı olarak yeni karakter, oyun modu ya da Kalıntı açıyor.
+
 > ⚠️ Oyun **geliştirme aşamasında**; "Demo" geçici adı. Çizimler geçici (pixel art gelecek), denge ayarları test ediliyor. Gördüğün hataları ve fikirlerini yazarsan çok yardımcı olur!
 
 ![Oyun içi](images/gameplay.png)
@@ -20,14 +22,12 @@ Sayfanın altındaki **Assets** bölümünden işletim sistemine uygun dosyayı 
 1. `Demo-windows.zip` dosyasını indir ve bir klasöre çıkart.
 2. `Demo.exe` dosyasını çalıştır.
 3. "Windows bilgisayarınızı korudu" uyarısı çıkarsa: **Ek bilgi** → **Yine de çalıştır**.
-   *(Oyun dijital olarak imzalı olmadığı için bu uyarı çıkıyor.)*
-4. Oda açtığında Windows Güvenlik Duvarı izin isterse **İzin ver**'e bas; yoksa arkadaşların sana bağlanamaz.
+4. Oda açtığında Windows Güvenlik Duvarı izin isterse **İzin ver**'e bas.
 
 ### macOS
 1. `Demo-macos.zip` dosyasını indir ve çift tıklayıp aç.
 2. `Demo` uygulamasına **sağ tıkla → Aç**.
 3. "Apple doğrulayamadı" uyarısı çıkarsa: **Sistem Ayarları → Gizlilik ve Güvenlik** → en altta **Yine de Aç**.
-   *(Oyun Apple tarafından imzalı olmadığı için bu bir kerelik uyarı çıkıyor.)*
 
 ---
 
@@ -42,14 +42,14 @@ Bir kişi **oda açar** (host), diğerleri o odaya **bağlanır**. En fazla 4 ki
 4. Herkes lobide görününce host **Oyunu Başlat**'a basar.
 
 ### Farklı evlerdeyseniz (internet üzerinden)
-Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programını kullanıyoruz. Bilgisayarlarınızı sanki aynı evdeymişsiniz gibi birbirine bağlar; modem ayarlarıyla uğraşmazsınız.
+Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programını kullanıyoruz.
 
-1. **Herkes** Tailscale'i indirip kurar ve bir hesapla (Google, Microsoft vb.) giriş yapar.
-2. **Host**, [Tailscale yönetim panelinde](https://login.tailscale.com/admin/machines) kendi bilgisayarının satırındaki **Share** ile bilgisayarını arkadaşlarıyla paylaşır. Arkadaşlar e‑postalarına gelen daveti kabul eder.
-3. Host oyunda **Oda Aç**'a basar. Lobide **"Farklı evden (Tailscale): 100.x.x.x"** yazar; **Adresi kopyala** ile arkadaşlarına gönderir.
+1. **Herkes** Tailscale'i indirip kurar ve bir hesapla giriş yapar.
+2. **Host**, [Tailscale yönetim panelinde](https://login.tailscale.com/admin/machines) bilgisayarını **Share** ile arkadaşlarıyla paylaşır.
+3. Host **Oda Aç**'a basar; **"Farklı evden (Tailscale): 100.x.x.x"** adresini arkadaşlarına gönderir.
 4. Arkadaşlar bu adresi IP kutusuna yazıp **Odaya Bağlan**.
 
-> Bağlanamıyorsanız: Tailscale herkeste açık mı? Host'un güvenlik duvarı oyuna izin veriyor mu? Herkes aynı sürümü mü kullanıyor?
+> Bağlanamıyorsanız: Tailscale herkeste açık mı? Güvenlik duvarı oyuna izin veriyor mu? Herkes aynı sürümü mü kullanıyor?
 
 ---
 
@@ -58,23 +58,43 @@ Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programın
 | Tuş | İş |
 |---|---|
 | **WASD** / ok tuşları | Hareket |
-| *(otomatik)* | Saldırı: silahların menzildeki düşmanlara kendisi saldırır |
+| *(otomatik)* | Saldırı |
 | **Tab** | Tam harita |
-| **ESC** | Menü (tek oyunculuda oyunu durdurur) |
+| **ESC** | Menü / duraklat |
 
+### Temel akış
 - **Seviye atla:** Düşmanlardan düşen yeşil XP taşlarını topla. Her seviyede 3 seçenekten birini al: yeni silah (en fazla 3) ya da pasif güç (en fazla 4).
-- **Evrim ★:** 5. seviyedeki bir silahın eşi olan pasif de sendeyse, bir boss'u yenip düşen **büyük sandığı** açınca silahın güçlü haline dönüşür. Oyun içindeki **Nasıl Oynanır** ekranında bütün evrimlerin listesi var.
-- **Co-op:** Ölen takım arkadaşının yanında 3 saniye durursan onu canlandırırsın. **Şifacı** sınıfı yakınındaki herkesi iyileştirir.
-- **Gelişim:** Her maç sonunda altın kazanırsın; ana menüdeki **Gelişim**'den kalıcı güçlendirmeler alırsın.
+- **Evrim ★:** 5. seviyedeki silahın eşi olan pasif de sendeyse, bir boss sonrası düşen **büyük sandığı** açınca silah güçlü haline evrilir.
+- **Co-op:** Ölen takım arkadaşının yanında 3 saniye durursan onu canlandırırsın. Şifacı sınıfı yakınındaki herkesi iyileştirir.
 
-![Boss](images/boss.png)
+### 🎪 Harita içi eventler
+Haritada parlayan **işaretler** beliriyor (ekran kenarındaki oklar ve Tab haritası yeri gösterir). Yanına gidersen event başlar, gitmezsen bir şey olmaz.
 
-### İçerik
-- **6 karakter, 4 sınıf:** Savaşçı, Büyücü, Okçu, Şifacı
-- **22 silah, 22 evrim:** yakın dövüş, mermi, zincir şimşek, dönen kılıçlar, bumerang, ok yağmuru…
-- **Düşmanlar:** 6 kademe (her 5 dakikada güçlenirler), elitler, bölünen ve patlayan düşmanlar
-- **5 farklı mini boss** ve **son boss**
-- Her maçta değişen **kayalık arena**, kırılabilir kasalar, iksir ve mıknatıs
+- **12 isteğe bağlı event:** Gizli Boss, Hazine Goblini, Lanetli Sunak, Ödül Avı, Kanlı Ay, Kervan Koruma, Arena, Hazine Parçaları, Şans Çarkı, Ölüm Avcısı, Katliam, Şeytan Paktı.
+- **Zorluk yıldızları ★ / ★★ / ★★★:** Zor event daha güçlü düşmanla gelir ama **Ruh Taşı ×2–3**, daha çok altın verir.
+- **Event zincirleri:** Bazı eventleri bitirince zincirin devamı yeni bir işaret olarak belirir (+1 Ruh Taşı).
+
+### 💎 Ruh Taşı ve Kalıntılar
+- Eventleri başarınca **Ruh Taşı** kazanırsın; maç sonunda kaybolmaz.
+- Ana menüdeki **Gelişim → Kalıntılar** sekmesinden kalıcı pasif güçler satın alırsın (Usta Silah, Kan Emici, Şans Tılsımı, Cellat ve daha fazlası).
+
+### 🔓 Kilit açma
+Her event türünün **ilk başarısı** kalıcı olarak bir şey açar: yeni karakter, oyun modu ya da Kalıntı.
+- **Açılan karakterler (★)** daha güçlüdür: +%20 can, +%12 hasar, +%5 hız.
+
+---
+
+## 🗂️ İçerik
+
+| | |
+|---|---|
+| **Karakterler** | 8 karakter, 4 sınıf — Savaşçı, Büyücü, Okçu, Şifacı (bir kısmı eventlerle açılır) |
+| **Silahlar** | 24+ silah, her birinin evrim versiyonu var |
+| **Eventler** | 12 isteğe bağlı + 1 otomatik (Sürü Dalgası) |
+| **Oyun modları** | Normal, Sonsuz, Zor, Hızlı Maç, Boss Akını (eventlerle açılır) |
+| **Düşmanlar** | 6 kademe, elitler, bölünen/patlayan/kalkanlı düşmanlar |
+| **Boss'lar** | 5 mini boss + çok aşamalı son boss |
+| **Kalıntılar** | 7 kalıcı pasif güçlendirme (Ruh Taşı ile alınır) |
 
 | Ana menü | Harita (Tab) |
 |---|---|
@@ -84,7 +104,7 @@ Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programın
 
 ## 💬 Geri bildirim
 
-Hata bulduysan ya da bir fikrin varsa bu sayfadaki **Issues** sekmesinden yazabilirsin (ya da doğrudan bana söyle). Özellikle şunları merak ediyorum:
+Hata bulduysan ya da bir fikrin varsa **Issues** sekmesinden yazabilirsin (ya da doğrudan bana söyle). Özellikle şunları merak ediyorum:
 - Hangi dakikada zorlandın, ne öldürdü?
 - Hangi silah/sınıf çok güçlü ya da çok zayıf geldi?
 - Oyun takıldı mı (çok düşman olunca)?
