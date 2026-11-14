@@ -2,7 +2,7 @@
 
 **30 dakika hayatta kal. Arkadaşlarınla birlikte.**
 
-ASOO, 1–4 kişilik eşli bir *survivors* oyunudur. Karakterin otomatik saldırır; sen hareket edip düşman dalgalarından kaçarsın. Seviye atladıkça silah ve güç toplar, 30. dakikada son boss ile karşılaşırsın.
+ASOO, 1–4 kişilik çevrimiçi co-op bir *survivors* oyunudur. Silahlar otomatik saldırır; oyuncular hareket ederek düşman dalgalarından kaçar, XP toplar ve seviye atladıkça silah veya pasif güç seçer. Normal maç yaklaşık 30 dakika sürer; haritaya ve moda göre süre değişebilir.
 
 Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
@@ -10,7 +10,7 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
-![Oyun içi](images/gameplay.png)
+![Savaş Meydanı güncel oyun varlıklarıyla hazırlanmış önizleme; oyun içi ekran görüntüsü değildir](images/asoo-battlefield-preview.png)
 
 ---
 
@@ -44,7 +44,7 @@ Bir kişi oda açar (host), diğerleri bağlanır. En fazla 4 kişi oynayabilir.
 4. Herkes lobide görünce host **Oyunu Başlat**'a basar.
 
 ### Farklı ağlarda
-Tailscale kurup aynı ağa katılın. Host'un Tailscale IP adresini (100.x.x.x) arkadaşlarına gönderin; diğer oyuncular bu adresle bağlansın. Güvenlik duvarının oyuna izin verdiğinden emin olun.
+İnternet/Tailscale bağlantısı iki cihazla henüz doğrulanmadı. Bağlantısı maç sırasında kopan oyuncu yeniden katılamaz.
 
 ---
 
@@ -66,9 +66,9 @@ Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da p
 - 2 harita teması
 - 12 isteğe bağlı event ve 1 otomatik Sürü Dalgası
 - Normal, Sonsuz, Zor, Hızlı Maç ve Boss Akını modları
-- 5 mini boss, çok aşamalı son boss ve kalıcı Kalıntılar
+- 5 mini boss, son boss ve kalıcı Kalıntılar
 
-![Menü](images/menu.png)
+![Sekiz oynanabilir karakterin güncel sprite önizlemesi; oyun içi ekran görüntüsü değildir](images/asoo-characters.png)
 
 ---
 
