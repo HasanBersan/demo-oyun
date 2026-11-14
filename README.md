@@ -1,12 +1,14 @@
-# Demo
+# ASOO
 
 **30 dakika hayatta kal. Arkadaşlarınla birlikte.**
 
-**Demo**, 1–4 kişilik co-op bir *survivors* oyunu: karakterin otomatik saldırır, sen hareket edip düşman dalgalarından kaçarsın, seviye atladıkça silah ve güç toplarsın. Her 5 dakikada düşmanlar güçlenir ve bir mini boss gelir; 30. dakikada son boss seni bekler.
+ASOO, 1–4 kişilik eşli bir *survivors* oyunudur. Karakterin otomatik saldırır; sen hareket edip düşman dalgalarından kaçarsın. Seviye atladıkça silah ve güç toplar, 30. dakikada son boss ile karşılaşırsın.
 
-Haritada **harita içi eventler** beliriyor: yanına gidersen bonus altın, Ruh Taşı ve özel ödüller kazanırsın. Her event başarısı kalıcı olarak yeni karakter, oyun modu ya da Kalıntı açıyor.
+Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
-> ⚠️ Oyun **geliştirme aşamasında**; "Demo" geçici adı. Çizimler geçici (pixel art gelecek), denge ayarları test ediliyor. Gördüğün hataları ve fikirlerini yazarsan çok yardımcı olur!
+> **v0.4.0 test sürümü:** Sekiz karakterin tamamı açık. Yeni Savaş Meydanı haritası, piksel-art görseller ve yenilenmiş oyun arayüzü bu sürüme dahil.
+>
+> **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
 ![Oyun içi](images/gameplay.png)
 
@@ -14,42 +16,35 @@ Haritada **harita içi eventler** beliriyor: yanına gidersen bonus altın, Ruh 
 
 ## 📥 İndir ve kur
 
-**[👉 En son sürümü indir](https://github.com/HasanBersan/demo-oyun/releases/latest)**
+**[👉 ASOO v0.4.0 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.0)**
 
-Sayfanın altındaki **Assets** bölümünden işletim sistemine uygun dosyayı indir.
+Release sayfasındaki **Assets** bölümünden işletim sistemine uygun ZIP dosyasını indir.
 
 ### Windows
-1. `Demo-windows.zip` dosyasını indir ve bir klasöre çıkart.
-2. `Demo.exe` dosyasını çalıştır.
-3. "Windows bilgisayarınızı korudu" uyarısı çıkarsa: **Ek bilgi** → **Yine de çalıştır**.
-4. Oda açtığında Windows Güvenlik Duvarı izin isterse **İzin ver**'e bas.
+1. `ASOO-windows.zip` dosyasını indirip bir klasöre çıkart.
+2. İçindeki `Demo.exe` dosyasını çalıştır.
+3. Windows koruma uyarısı çıkarsa **Ek bilgi → Yine de çalıştır** seçeneğini kullan.
+4. Oda açarken güvenlik duvarı sorarsa oyuna izin ver.
 
 ### macOS
-1. `Demo-macos.zip` dosyasını indir ve çift tıklayıp aç.
-2. `Demo` uygulamasına **sağ tıkla → Aç**.
-3. "Apple doğrulayamadı" uyarısı çıkarsa: **Sistem Ayarları → Gizlilik ve Güvenlik** → en altta **Yine de Aç**.
+1. `ASOO-macos.zip` dosyasını indirip aç.
+2. İçindeki `Demo.app` uygulamasına sağ tıklayıp **Aç**'ı seç.
+3. macOS uygulamayı doğrulayamazsa **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** yolunu izle.
 
 ---
 
 ## 🎮 Arkadaşlarınla oyna
 
-Bir kişi **oda açar** (host), diğerleri o odaya **bağlanır**. En fazla 4 kişi.
+Bir kişi oda açar (host), diğerleri bağlanır. En fazla 4 kişi oynayabilir.
 
-### Aynı evdeyseniz (aynı Wi‑Fi)
-1. Host: ana menüde **Oda Aç**.
-2. Lobide **"Aynı evden: 192.168.x.x"** yazar. **Adresi kopyala**'ya basıp arkadaşlarına gönder.
-3. Arkadaşlar: adresi IP kutusuna yazıp **Odaya Bağlan**.
-4. Herkes lobide görününce host **Oyunu Başlat**'a basar.
+### Aynı Wi‑Fi'de
+1. Host ana menüden **Oda Aç**'ı seçer.
+2. Lobide gösterilen yerel IP adresini arkadaşlarına gönderir.
+3. Diğer oyuncular adresi IP kutusuna yazıp **Odaya Bağlan**'ı seçer.
+4. Herkes lobide görünce host **Oyunu Başlat**'a basar.
 
-### Farklı evlerdeyseniz (internet üzerinden)
-Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programını kullanıyoruz.
-
-1. **Herkes** Tailscale'i indirip kurar ve bir hesapla giriş yapar.
-2. **Host**, [Tailscale yönetim panelinde](https://login.tailscale.com/admin/machines) bilgisayarını **Share** ile arkadaşlarıyla paylaşır.
-3. Host **Oda Aç**'a basar; **"Farklı evden (Tailscale): 100.x.x.x"** adresini arkadaşlarına gönderir.
-4. Arkadaşlar bu adresi IP kutusuna yazıp **Odaya Bağlan**.
-
-> Bağlanamıyorsanız: Tailscale herkeste açık mı? Güvenlik duvarı oyuna izin veriyor mu? Herkes aynı sürümü mü kullanıyor?
+### Farklı ağlarda
+Tailscale kurup aynı ağa katılın. Host'un Tailscale IP adresini (100.x.x.x) arkadaşlarına gönderin; diğer oyuncular bu adresle bağlansın. Güvenlik duvarının oyuna izin verdiğinden emin olun.
 
 ---
 
@@ -62,49 +57,21 @@ Bunun için ücretsiz **[Tailscale](https://tailscale.com/download)** programın
 | **Tab** | Tam harita |
 | **ESC** | Menü / duraklat |
 
-### Temel akış
-- **Seviye atla:** Düşmanlardan düşen yeşil XP taşlarını topla. Her seviyede 3 seçenekten birini al: yeni silah (en fazla 3) ya da pasif güç (en fazla 4).
-- **Evrim ★:** 5. seviyedeki silahın eşi olan pasif de sendeyse, bir boss sonrası düşen **büyük sandığı** açınca silah güçlü haline evrilir.
-- **Co-op:** Ölen takım arkadaşının yanında 3 saniye durursan onu canlandırırsın. Şifacı sınıfı yakınındaki herkesi iyileştirir.
+Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da pasif güç seç. Silahları eşleşen pasiflerle geliştir; boss sandıklarından evrim kazan. Takım arkadaşını yerdeyken yanında 3 saniye durarak canlandırabilirsin.
 
-### 🎪 Harita içi eventler
-Haritada parlayan **işaretler** beliriyor (ekran kenarındaki oklar ve Tab haritası yeri gösterir). Yanına gidersen event başlar, gitmezsen bir şey olmaz.
+## ✨ İçerik
 
-- **12 isteğe bağlı event:** Gizli Boss, Hazine Goblini, Lanetli Sunak, Ödül Avı, Kanlı Ay, Kervan Koruma, Arena, Hazine Parçaları, Şans Çarkı, Ölüm Avcısı, Katliam, Şeytan Paktı.
-- **Zorluk yıldızları ★ / ★★ / ★★★:** Zor event daha güçlü düşmanla gelir ama **Ruh Taşı ×2–3**, daha çok altın verir.
-- **Event zincirleri:** Bazı eventleri bitirince zincirin devamı yeni bir işaret olarak belirir (+1 Ruh Taşı).
+- 8 karakter, 4 sınıf
+- 34 temel silah ve 34 evrim
+- 2 harita teması
+- 12 isteğe bağlı event ve 1 otomatik Sürü Dalgası
+- Normal, Sonsuz, Zor, Hızlı Maç ve Boss Akını modları
+- 5 mini boss, çok aşamalı son boss ve kalıcı Kalıntılar
 
-### 💎 Ruh Taşı ve Kalıntılar
-- Eventleri başarınca **Ruh Taşı** kazanırsın; maç sonunda kaybolmaz.
-- Ana menüdeki **Gelişim → Kalıntılar** sekmesinden kalıcı pasif güçler satın alırsın (Usta Silah, Kan Emici, Şans Tılsımı, Cellat ve daha fazlası).
-
-### 🔓 Kilit açma
-Her event türünün **ilk başarısı** kalıcı olarak bir şey açar: yeni karakter, oyun modu ya da Kalıntı.
-- **Açılan karakterler (★)** daha güçlüdür: +%20 can, +%12 hasar, +%5 hız.
-
----
-
-## 🗂️ İçerik
-
-| | |
-|---|---|
-| **Karakterler** | 8 karakter, 4 sınıf — Savaşçı, Büyücü, Okçu, Şifacı (bir kısmı eventlerle açılır) |
-| **Silahlar** | 24+ silah, her birinin evrim versiyonu var |
-| **Eventler** | 12 isteğe bağlı + 1 otomatik (Sürü Dalgası) |
-| **Oyun modları** | Normal, Sonsuz, Zor, Hızlı Maç, Boss Akını (eventlerle açılır) |
-| **Düşmanlar** | 6 kademe, elitler, bölünen/patlayan/kalkanlı düşmanlar |
-| **Boss'lar** | 5 mini boss + çok aşamalı son boss |
-| **Kalıntılar** | 7 kalıcı pasif güçlendirme (Ruh Taşı ile alınır) |
-
-| Ana menü | Harita (Tab) |
-|---|---|
-| ![Menü](images/menu.png) | ![Harita](images/map.png) |
+![Menü](images/menu.png)
 
 ---
 
 ## 💬 Geri bildirim
 
-Hata bulduysan ya da bir fikrin varsa **Issues** sekmesinden yazabilirsin (ya da doğrudan bana söyle). Özellikle şunları merak ediyorum:
-- Hangi dakikada zorlandın, ne öldürdü?
-- Hangi silah/sınıf çok güçlü ya da çok zayıf geldi?
-- Oyun takıldı mı (çok düşman olunca)?
+Hata bildirmek veya fikir paylaşmak için GitHub **Issues** sekmesini kullan. Hata raporuna oyunun dakikasını, seçtiğin karakteri ve oyun modunu ekle.
