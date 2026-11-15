@@ -6,7 +6,7 @@ ASOO, 1–4 kişilik çevrimiçi co-op bir *survivors* oyunudur. Silahlar otomat
 
 Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
-> **v0.4.0 test sürümü:** Sekiz karakterin tamamı açık. Yeni Savaş Meydanı haritası, piksel-art görseller ve yenilenmiş oyun arayüzü bu sürüme dahil.
+> **v0.4.5 test sürümü:** Sekiz karakterin tamamı açık. Yeni Savaş Meydanı haritası, piksel-art görseller ve yenilenmiş oyun arayüzü bu sürüme dahil.
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
@@ -16,18 +16,18 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 
 ## 📥 İndir ve kur
 
-**[👉 ASOO v0.4.0 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.0)**
+**[👉 ASOO v0.4.5 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.5)**
 
 Release sayfasındaki **Assets** bölümünden işletim sistemine uygun ZIP dosyasını indir.
 
 ### Windows
-1. `ASOO-windows.zip` dosyasını indirip bir klasöre çıkart.
+1. `Demo-windows.zip` dosyasını indirip bir klasöre çıkart.
 2. İçindeki `Demo.exe` dosyasını çalıştır.
 3. Windows koruma uyarısı çıkarsa **Ek bilgi → Yine de çalıştır** seçeneğini kullan.
 4. Oda açarken güvenlik duvarı sorarsa oyuna izin ver.
 
 ### macOS
-1. `ASOO-macos.zip` dosyasını indirip aç.
+1. `Demo-macos.zip` dosyasını indirip aç.
 2. İçindeki `Demo.app` uygulamasına sağ tıklayıp **Aç**'ı seç.
 3. macOS uygulamayı doğrulayamazsa **Sistem Ayarları → Gizlilik ve Güvenlik → Yine de Aç** yolunu izle.
 
