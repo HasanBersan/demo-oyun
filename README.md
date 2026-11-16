@@ -10,7 +10,7 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
-![Savaş Meydanı güncel oyun varlıklarıyla hazırlanmış önizleme; oyun içi ekran görüntüsü değildir](images/asoo-battlefield-preview.png)
+![Dört haritadan oyun içi ekran görüntüleri: Savaş Meydanı, Volkan, Buzul Vadisi ve Lanetli Bataklık](images/asoo-maps.png)
 
 ---
 
@@ -68,7 +68,7 @@ Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da p
 - Normal, Sonsuz, Zor, Hızlı Maç ve Boss Akını modları
 - 8 mini boss, 3 evreli son boss ve kalıcı Kalıntılar; Volkan ve Buzul Vadisi'nde haritaya özel kalıcı ilerleme
 
-![Sekiz oynanabilir karakterin güncel sprite önizlemesi; oyun içi ekran görüntüsü değildir](images/asoo-characters.png)
+![On oynanabilir karakter: her birinin özelliği ve tek başlangıç silahı (oyun içi sprite'larla hazırlanmış kart sayfası)](images/asoo-characters.png)
 
 ---
 
