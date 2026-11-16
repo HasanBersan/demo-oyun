@@ -70,6 +70,8 @@ Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da p
 
 ![On oynanabilir karakter: her birinin özelliği ve tek başlangıç silahı (oyun içi sprite'larla hazırlanmış kart sayfası)](images/asoo-characters.png)
 
+![Her haritanın kendi duraklatma ekranı: Savaş Meydanı, Volkan, Buzul Vadisi ve Lanetli Bataklık](images/asoo-pause.png)
+
 ---
 
 ## 💬 Geri bildirim
