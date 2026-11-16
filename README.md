@@ -6,7 +6,7 @@ ASOO, 1–4 kişilik çevrimiçi co-op bir *survivors* oyunudur. Silahlar otomat
 
 Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
-> **v0.4.5 test sürümü:** Sekiz karakterin tamamı açık. Yeni Savaş Meydanı haritası, piksel-art görseller ve yenilenmiş oyun arayüzü bu sürüme dahil.
+> **v0.4.6 test sürümü:** On karakterin tamamı açık. Dört harita (Savaş Meydanı, Volkan, Buzul Vadisi, Lanetli Bataklık), 49 silah ve evrim, 20 pasif, her karaktere özgü özellikler, evreli boss savaşları ve haritaya özel kalıcı ilerleme bu sürüme dahil.
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
@@ -16,7 +16,7 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 
 ## 📥 İndir ve kur
 
-**[👉 ASOO v0.4.5 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.5)**
+**[👉 ASOO v0.4.6 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.6)**
 
 Release sayfasındaki **Assets** bölümünden işletim sistemine uygun ZIP dosyasını indir.
 
@@ -61,12 +61,12 @@ Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da p
 
 ## ✨ İçerik
 
-- 8 karakter, 4 sınıf
-- 34 temel silah ve 34 evrim
-- 2 harita teması
-- 12 isteğe bağlı event ve 1 otomatik Sürü Dalgası
+- 10 karakter: her birinin kendine özgü özelliği ve tek bir başlangıç silahı var
+- 49 temel silah, 49 evrim ve 20 pasif
+- 4 harita: Savaş Meydanı, Volkan, Buzul Vadisi ve Lanetli Bataklık; her birinin kendi düşmanları, tehlikesi ve temalı duraklatma ekranı var
+- 16 isteğe bağlı event (haritaya özel olanlar dahil) ve 1 otomatik Sürü Dalgası
 - Normal, Sonsuz, Zor, Hızlı Maç ve Boss Akını modları
-- 5 mini boss, son boss ve kalıcı Kalıntılar
+- 8 mini boss, 3 evreli son boss ve kalıcı Kalıntılar; Volkan ve Buzul Vadisi'nde haritaya özel kalıcı ilerleme
 
 ![Sekiz oynanabilir karakterin güncel sprite önizlemesi; oyun içi ekran görüntüsü değildir](images/asoo-characters.png)
 
