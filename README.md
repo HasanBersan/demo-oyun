@@ -6,7 +6,7 @@ ASOO, 1–4 kişilik çevrimiçi co-op bir *survivors* oyunudur. Silahlar otomat
 
 Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
-> **v0.4.6 test sürümü:** On karakterin tamamı açık. Dört harita (Savaş Meydanı, Volkan, Buzul Vadisi, Lanetli Bataklık), 49 silah ve evrim, 20 pasif, her karaktere özgü özellikler, evreli boss savaşları ve haritaya özel kalıcı ilerleme bu sürüme dahil.
+> **v0.4.7 test sürümü:** On karakterin tamamı açık. Dört harita, 49 silah ve evrim, 20 pasif; yeni olarak her karaktere aktif yetenek (Boşluk/E), gece ve gündüz, düşman hücum desenleri, Harita Hazineleri, yol üstü karşılaşmalar, haritaya özel eşyalar, elitlerden düşen ekipman ve Görevler.
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
@@ -16,7 +16,7 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 
 ## 📥 İndir ve kur
 
-**[👉 ASOO v0.4.6 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.6)**
+**[👉 Blood & Chain v0.4.7 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.7)**
 
 Release sayfasındaki **Assets** bölümünden işletim sistemine uygun ZIP dosyasını indir.
 
