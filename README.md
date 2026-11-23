@@ -6,7 +6,7 @@ ASOO, 1–4 kişilik çevrimiçi co-op bir *survivors* oyunudur. Silahlar otomat
 
 Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak altın, Ruh Taşı, karakterler, oyun modları ve Kalıntılar kazanırsın.
 
-> **v0.4.8 test sürümü:** 20 karakter, her birine özel Yetenek Ağacı (200 özgün seçenek, altınla açılır), zincirli nadirlik kartları, 3 evreli epik bosslar ve haritaya özel boss can barları, daha zor co-op, silah dengesi turu. Dört harita, 49+ silah ve evrim, aktif yetenekler (Boşluk/E), gece-gündüz, Harita Hazineleri, ekipman ve Görevler.
+> **v0.5.0 test sürümü:** **Zorluk Isısı** (maç öncesi 10 taş mühürle zorluk kuralları seç, karşılığında daha çok altın kazan), yerden yükselen Kan Kitabesi seviye kartları, Kan sistemi (Kan Öfkesi, kanla diriltme, Kan Sunağı), her yeteneğe özel efekt ve iz, parçalanan düşmanlar, patlayıcı fıçılar ve yuvarlanan kayalar, darbe fiziği, dairesel Yetenek Ağacı, Tehlike saati, Dönüşümler ve Ansiklopedi, co-op'ta akıcı düşman hareketi. 20 karakterin adları İngilizce oldu; Zor Mod ve toplanabilir bomba kaldırıldı.
 >
 > **Bilinen sınırlamalar:** Maç sırasında bağlantısı kopan oyuncu yeniden katılamaz. İki cihazla internet/Tailscale bağlantı testi henüz tamamlanmadı. macOS paketi gerçek bir Mac'te ilk açılış testinden geçmedi.
 
@@ -16,7 +16,7 @@ Haritalarda isteğe bağlı event işaretleri belirir. Eventleri tamamlayarak al
 
 ## 📥 İndir ve kur
 
-**[👉 Blood & Chain v0.4.8 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.4.8)**
+**[👉 Blood & Chain v0.5.0 test sürümünü indir](https://github.com/HasanBersan/demo-oyun/releases/tag/v0.5.0)**
 
 Release sayfasındaki **Assets** bölümünden işletim sistemine uygun ZIP dosyasını indir.
 
@@ -61,14 +61,14 @@ Düşmanlardan düşen XP taşlarını topla ve seviye atladıkça silah ya da p
 
 ## ✨ İçerik
 
-- 10 karakter: her birinin kendine özgü özelliği ve tek bir başlangıç silahı var
+- 20 karakter: her birinin kendine özgü özelliği, tek bir başlangıç silahı ve kendi Yetenek Ağacı var
 - 49 temel silah, 49 evrim ve 20 pasif
 - 4 harita: Savaş Meydanı, Volkan, Buzul Vadisi ve Lanetli Bataklık; her birinin kendi düşmanları, tehlikesi ve temalı duraklatma ekranı var
 - 16 isteğe bağlı event (haritaya özel olanlar dahil) ve 1 otomatik Sürü Dalgası
-- Normal, Sonsuz, Zor, Hızlı Maç ve Boss Akını modları
+- Normal, Sonsuz, Hızlı Maç ve Boss Akını modları; 10 isteğe bağlı Zorluk Isısı mührüyle zorluğu kendin ayarla (kural başına +%15 maç sonu altını)
 - 8 mini boss, 3 evreli son boss ve kalıcı Kalıntılar; Volkan ve Buzul Vadisi'nde haritaya özel kalıcı ilerleme
 
-![On oynanabilir karakter: her birinin özelliği ve tek başlangıç silahı (oyun içi sprite'larla hazırlanmış kart sayfası)](images/asoo-characters.png)
+![Oynanabilir karakterler: her birinin özelliği ve tek başlangıç silahı (oyun içi sprite'larla hazırlanmış kart sayfası)](images/asoo-characters.png)
 
 ![Her haritanın kendi duraklatma ekranı: Savaş Meydanı, Volkan, Buzul Vadisi ve Lanetli Bataklık](images/asoo-pause.png)
 
